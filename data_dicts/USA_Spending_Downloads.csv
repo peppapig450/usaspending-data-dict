@@ -1,0 +1,458 @@
+Award File,Award Element,Subaward File,Subaward Element,Account File,Account Element
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",1862_land_grant_college,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",1890_land_grant_college,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",1994_land_grant_college,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",c8a_program_participant,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",a76_fair_act_action,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",a76_fair_act_action_code,,,,
+,,,,"FA_AccountBalances.csv, TAS_AccountBalances.csv, FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv, FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",federal_account_name
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv","action_date, award_base_action_date","Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_base_action_date,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",award_base_action_date
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv","action_date_fiscal_year, award_base_action_date_fiscal_year",,,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",award_base_action_date_fiscal_year
+"Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",action_type_code,,,,
+"Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv","action_type_description, action_type",,,,
+,,,,,
+,,,,"FA_AccountBalances.csv, TAS_AccountBalances.csv",adjustments_to_unobligated_balance_brought_forward_cpe
+,,,,"TAS_AccountBalances.csv, TAS_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByAward.csv",agency_identifier_code
+,,,,"FA_AccountBalances.csv, TAS_AccountBalances.csv, FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv, FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",agency_identifier_name
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",airport_authority,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",alaskan_native_corporation_owned_firm,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",alaskan_native_servicing_institution,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",receives_contracts_and_financial_assistance,,,,
+,,,,"TAS_AccountBalances.csv, TAS_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByAward.csv",allocation_transfer_agency_identifier_code
+,,,,"TAS_AccountBalances.csv, TAS_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByAward.csv",allocation_transfer_agency_identifier_name
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",american_indian_owned_business,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",asian_pacific_american_owned_business,,,,
+"Assistance_PrimeAwardSummaries.csv, Assistance_PrimeTransactions.csv",cfda_number,,,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",cfda_number
+,,,,,
+Assistance_PrimeAwardSummaries.csv,cfda_numbers_and_titles,Assistance_Subawards.csv,prime_award_cfda_numbers_and_titles,,
+"Assistance_PrimeAwardSummaries.csv, Assistance_PrimeTransactions.csv",cfda_title,,,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",cfda_title
+,,,,,
+Assistance_PrimeTransactions.csv,assistance_transaction_unique_key,,,,
+"Assistance_PrimeAwardSummaries.csv, Assistance_PrimeTransactions.csv",assistance_type_code,,,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",award_type_code
+"Assistance_PrimeAwardSummaries.csv, Assistance_PrimeTransactions.csv",assistance_type_description,,,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",award_type
+,,,,"TAS_AccountBalances.csv, TAS_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByAward.csv",availability_type_code
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",award_or_idv_flag,,,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv","prime_award_base_transaction_description, transaction_description","Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_base_transaction_description,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",prime_award_base_transaction_description
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv","recipient_name, recipient_name_raw","Contracts_Subawards.csv, Assistance_Subawards.csv",prime_awardee_name,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv","recipient_name, recipient_name_raw"
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",recipient_uei,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_awardee_uei,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",recipient_uei
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",awarding_agency_code,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_awarding_agency_code,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",awarding_agency_code
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",awarding_agency_name,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_awarding_agency_name,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",awarding_agency_name
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",awarding_office_code,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_awarding_office_code,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",awarding_office_code
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",awarding_office_name,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_awarding_office_name,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",awarding_office_name
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",awarding_sub_agency_code,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_awarding_sub_agency_code,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",awarding_subagency_code
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",awarding_sub_agency_name,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_awarding_sub_agency_name,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",awarding_subagency_name
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv",award_latest_action_date,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_latest_action_date,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",award_latest_action_date
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv",award_latest_action_date_fiscal_year,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_latest_action_date_fiscal_year,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",award_latest_action_date_fiscal_year
+"Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",modification_number,,,,
+Contracts_PrimeTransactions.csv,base_and_all_options_value,,,,
+Contracts_PrimeTransactions.csv,base_and_exercised_options_value,,,,
+,,,,"TAS_AccountBalances.csv, TAS_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByAward.csv",beginning_period_of_availability
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",black_american_owned_business,,,,
+,,,,"FA_AccountBalances.csv, TAS_AccountBalances.csv",borrowing_authority_amount
+,,,,"FA_AccountBalances.csv, TAS_AccountBalances.csv",budget_authority_appropriated_amount
+,,,,"FA_AccountBalances.csv, TAS_AccountBalances.csv",budget_authority_unobligated_balance_brought_forward
+,,,,"FA_AccountBalances.csv, TAS_AccountBalances.csv, FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv, FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",budget_function
+,,,,"FA_AccountBalances.csv, TAS_AccountBalances.csv, FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv, FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",budget_subfunction
+"Assistance_PrimeAwardSummaries.csv, Assistance_PrimeTransactions.csv",business_funds_indicator_code,,,,
+"Assistance_PrimeAwardSummaries.csv, Assistance_PrimeTransactions.csv",business_funds_indicator_description,,,,
+"Assistance_PrimeAwardSummaries.csv, Assistance_PrimeTransactions.csv",business_types_code,,,,
+"Assistance_PrimeAwardSummaries.csv, Assistance_PrimeTransactions.csv",business_types_description,,,,
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv, FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",direct_or_reimbursable_funding_source
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",cage_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",city_local_government,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",clinger_cohen_act_planning,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",clinger_cohen_act_planning_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",commercial_item_acquisition_procedures,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",simplified_procedures_for_certain_commercial_items,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",commercial_item_acquisition_procedures_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",community_developed_corporation_owned_firm,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",community_development_corporation,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",consolidated_contract,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",consolidated_contract_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",construction_wage_rate_requirements,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",construction_wage_rate_requirements_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",contract_bundling,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",contract_financing,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",fed_biz_opps,,,,
+,,,,"FA_AccountBalances.csv, TAS_AccountBalances.csv",contract_authority_amount
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",award_type_code,,,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",award_type_code
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",award_type,,,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",award_type
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",contract_bundling_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",contract_financing_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",contracting_officers_determination_of_business_size,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",contracting_officers_determination_of_business_size_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",fed_biz_opps_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",receives_contracts,,,,
+Contracts_PrimeTransactions.csv,contract_transaction_unique_key,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",corporate_entity_not_tax_exempt,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",corporate_entity_tax_exempt,,,,
+Assistance_PrimeTransactions.csv,correction_delete_indicator_code,,,,
+Assistance_PrimeTransactions.csv,correction_delete_indicator_description,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",cost_accounting_standards_clause,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",cost_or_pricing_data,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",cost_accounting_standards_clause_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",cost_or_pricing_data_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",council_of_governments,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",country_of_product_or_service_origin,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",country_of_product_or_service_origin_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",county_local_government,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",current_total_value_of_award,,,,
+,,,,,
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv",deobligations_or_recoveries_or_refunds_from_prior_year
+,,,,"FA_AccountBalances.csv, TAS_AccountBalances.csv",deobligations_or_recoveries_or_refunds_from_prior_year
+,award_obligations,,,,
+,award_outlays,,,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv","disaster_emergency_fund_codes, disaster_emergency_fund_codes_for_overall_award","Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_disaster_emergency_fund_codes,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv, FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",disaster_emergency_fund_code
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv, FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",disaster_emergency_fund_name
+,face_value_of_loans,,,,
+,number_of_awards,,,,
+,recipient,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",dod_acquisition_program_description,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",dod_claimant_program_description,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",dod_acquisition_program_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",dod_claimant_program_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",domestic_or_foreign_entity,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",domestic_or_foreign_entity_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",domestic_shelter,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",dot_certified_disadvantage,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",economically_disadvantaged_women_owned_small_business,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",educational_institution,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",contingency_humanitarian_or_peacekeeping_operation,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",contingency_humanitarian_or_peacekeeping_operation_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",emerging_small_business,,,,
+,,,,"TAS_AccountBalances.csv, TAS_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByAward.csv",ending_period_of_availability
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",recipient_doing_business_as_name,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_awardee_dba_name,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",recipient_fax_number,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",recipient_phone_number,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",epa_designated_product,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",epa_designated_product_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",evaluated_preference,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",evaluated_preference_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",extent_competed,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",extent_competed_code,,,,
+Assistance_PrimeTransactions.csv,face_value_of_loan,,,,
+"Assistance_PrimeAwardSummaries.csv, Assistance_PrimeTransactions.csv",award_id_fain,,,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",award_id_fain
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",fair_opportunity_limited_sources,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",fair_opportunity_limited_sources_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",federal_accounts_funding_this_award,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_federal_accounts_funding_this_award,,
+,,,,"FA_AccountBalances.csv, TAS_AccountBalances.csv, FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv, FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",federal_account_symbol
+"Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",federal_action_obligation,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",federal_agency,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",receives_financial_assistance,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",federally_funded_research_and_development_corp,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",foreign_funding_description,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",foreign_funding,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",foreign_government,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",foreign_owned,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",for_profit_organization,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",foundation,,,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",funding_agency_code,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_funding_agency_code,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",funding_agency_code
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",funding_agency_name,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_funding_agency_name,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",funding_agency_name
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",funding_office_code,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_funding_office_code,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",funding_office_code
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",funding_office_name,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_funding_office_name,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",funding_office_name
+"Assistance_PrimeAwardSummaries.csv, Assistance_PrimeTransactions.csv",funding_opportunity_goals_text,,,,
+"Assistance_PrimeAwardSummaries.csv, Assistance_PrimeTransactions.csv",funding_opportunity_number,,,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",funding_sub_agency_code,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_funding_sub_agency_code,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",funding_sub_agency_code
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",funding_sub_agency_name,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_funding_sub_agency_name,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",funding_sub_agency_name
+,,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",government_furnished_property,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",government_furnished_property_code,,,,
+,,,,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",gross_outlay_amount_FYB_to_period_end
+,,,,,
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv",gross_outlay_amount_FYB_to_period_end
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv",gross_outlay_amount_FYB
+,,,,"FA_AccountBalances.csv, TAS_AccountBalances.csv",gross_outlay_amount
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv",gross_outlays_delivered_orders_paid_total
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv",gross_outlays_delivered_orders_paid_total_FYB
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv",gross_outlays_undelivered_orders_prepaid_total
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv",gross_outlays_undelivered_orders_prepaid_total_FYB
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",highly_compensated_officer_1_amount,,,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",highly_compensated_officer_1_name,,,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",highly_compensated_officer_2_amount,,,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",highly_compensated_officer_2_name,,,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",highly_compensated_officer_3_amount,,,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",highly_compensated_officer_3_name,,,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",highly_compensated_officer_4_amount,,,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",highly_compensated_officer_4_name,,,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",highly_compensated_officer_5_amount,,,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",highly_compensated_officer_5_name,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",hispanic_american_owned_business,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",hispanic_servicing_institution,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",historically_black_college,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",historically_underutilized_business_zone_hubzone_firm,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",hospital_flag,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",housing_authorities_public_tribal,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",idv_type_code,,,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",idv_type_code
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",idv_type,,,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",idv_type
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",indian_tribe_federally_recognized,,,,
+"Assistance_PrimeAwardSummaries.csv, Assistance_PrimeTransactions.csv",indirect_cost_federal_share_amount,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",information_technology_commercial_item_category,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",information_technology_commercial_item_category_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",inherently_governmental_functions_description,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",inherently_governmental_functions,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",inter_municipal_local_government,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",interagency_contracting_authority,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",interagency_contracting_authority_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",international_organization,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",interstate_entity,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",joint_venture_economic_disadvantaged_women_owned_small_bus,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",joint_venture_women_owned_small_business,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",labor_standards,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",labor_standards_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",labor_surplus_area_firm,,,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",last_modified_date,,,"FA_AccountBalances.csv, TAS_AccountBalances.csv, FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv, FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",last_modified_date
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",recipient_address_line_1,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_awardee_address_line_1,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",recipient_address_line_2,,,,
+"Assistance_PrimeAwardSummaries.csv, Assistance_PrimeTransactions.csv",recipient_city_code,,,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",recipient_city
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",recipient_city_name,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_awardee_city_name,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv","recipient_congressional_district, prime_award_summary_recipient_cd_original, prime_award_summary_recipient_cd_current","Contracts_Subawards.csv, Assistance_Subawards.csv","prime_awardee_congressional_district, prime_award_summary_recipient_cd_original, prime_award_summary_recipient_cd_current","FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",recipient_congressional_district
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv","prime_award_summary_recipient_county_fips_code, prime_award_transaction_recipient_county_fips_code","Contracts_Subawards.csv, Assistance_Subawards.csv",prime_awardee_country_code,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",recipient_country
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",recipient_country_name,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_awardee_country_name,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv","prime_award_summary_recipient_county_fips_code, prime_award_transaction_recipient_county_fips_code",,,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",recipient_county
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",recipient_county_name,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_awardee_county_name,,
+"Assistance_PrimeAwardSummaries.csv, Assistance_PrimeTransactions.csv",recipient_foreign_city_name,,,,
+"Assistance_PrimeAwardSummaries.csv, Assistance_PrimeTransactions.csv",recipient_foreign_postal_code,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_awardee_foreign_postal_code,,
+"Assistance_PrimeAwardSummaries.csv, Assistance_PrimeTransactions.csv",recipient_foreign_province_name,,,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv","prime_award_summary_recipient_state_fips_code, prime_award_transaction_recipient_state_fips_code, recipient_state_code","Contracts_Subawards.csv, Assistance_Subawards.csv",prime_awardee_state_code,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",recipient_state
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",recipient_state_name,,,,
+"Assistance_PrimeAwardSummaries.csv, Assistance_PrimeTransactions.csv",recipient_state_name,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_awardee_state_name,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",recipient_zip_4_code,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_awardee_zip_code,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",recipient_zip_code
+"Assistance_PrimeAwardSummaries.csv, Assistance_PrimeTransactions.csv",recipient_zip_code,,,,
+"Assistance_PrimeAwardSummaries.csv, Assistance_PrimeTransactions.csv",recipient_zip_last_4_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",limited_liability_corporation,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",local_area_set_aside,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",local_area_set_aside_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",local_government_owned,,,,
+,,,,"TAS_AccountBalances.csv, TAS_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByAward.csv",main_account_code
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",major_program,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",manufacturer_of_goods,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",materials_supplies_articles_equipment,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",materials_supplies_articles_equipment_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",minority_institution,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",minority_owned_business,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",multi_year_contract,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",multiple_or_single_award_idv,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",multiple_or_single_award_idv_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",multi_year_contract_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",municipality_local_government,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",naics_code,Contracts_Subawards.csv,prime_award_naics_code,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",naics_code
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",naics_description,Contracts_Subawards.csv,prime_award_naics_description,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",naics_description
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",national_interest_action,Contracts_Subawards.csv,prime_award_national_interest_action,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",national_interest_action
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",national_interest_action_code,Contracts_Subawards.csv,prime_award_national_interest_action_code,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",national_interest_action_code
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",native_american_owned_business,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",native_hawaiian_organization_owned_firm,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",native_hawaiian_servicing_institution,,,,
+Assistance_PrimeTransactions.csv,non_federal_funding_amount,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",nonprofit_organization,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",number_of_actions,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",number_of_offers_received,,,,
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv, FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",object_class_code
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",object_classes_funding_this_award,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_object_classes_funding_this_award,,
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv, FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",object_class_name
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv","obligated_amount_from_COVID-19_supplementals_for_overall_award, obligated_amount_from_COVID-19_supplementals","Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_obligated_amount_from_COVID-19_supplementals,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv","obligated_amount_from_IIJA_supplemental, obligated_amount_from_IIJA_supplemental_for_overall_award","Contracts_Subawards.csv, Assistance_Subawards.csv","obligated_amount_from_IIJA_supplemental, obligated_amount_from_IIJA_supplemental_for_overall_award",,
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv",obligations_delivered_orders_unpaid_total
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv",obligations_delivered_orders_unpaid_total_FYB
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv",obligations_incurred
+,,,,,
+,,,,"FA_AccountBalances.csv, TAS_AccountBalances.csv",obligations_incurred
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv",obligations_undelivered_orders_unpaid_total
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv",obligations_undelivered_orders_unpaid_total_FYB
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",ordering_period_end_date,,,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",ordering_period_end_date
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",organizational_type,,,,
+Assistance_PrimeTransactions.csv,original_loan_subsidy_cost,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",other_than_full_and_open_competition,,,,
+,,,,"FA_AccountBalances.csv, TAS_AccountBalances.csv",total_other_budgetary_resources_amount
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",other_minority_owned_business,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",other_not_for_profit_organization,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",other_statutory_authority,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",other_than_full_and_open_competition_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv","outlayed_amount_from_COVID-19_supplementals_for_overall_award, outlayed_amount_from_COVID-19_supplementals","Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_outlayed_amount_from_COVID-19_supplementals,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv","outlayed_amount_from_IIJA_supplemental, outlayed_amount_from_IIJA_supplemental_for_overall_award","Contracts_Subawards.csv, Assistance_Subawards.csv","outlayed_amount_from_IIJA_supplemental, outlayed_amount_from_IIJA_supplemental_for_overall_award",,
+,,,,"FA_AccountBalances.csv, TAS_AccountBalances.csv, FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv, FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",owning_agency_name
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",parent_award_id_piid,Contracts_Subawards.csv,prime_award_parent_piid,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",parent_award_id_piid
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",partnership_or_limited_liability_partnership,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",performance_based_service_acquisition,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",performance_based_service_acquisition_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",period_of_performance_current_end_date,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_period_of_performance_current_end_date,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",period_of_performance_current_end_date
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",period_of_performance_potential_end_date,Contracts_Subawards.csv,prime_award_period_of_performance_potential_end_date,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",period_of_performance_start_date,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_period_of_performance_start_date,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",period_of_performance_start_date
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",award_id_piid,,,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",award_id_piid
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",place_of_manufacture,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",place_of_manufacture_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",planning_commission,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",port_authority,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",potential_total_value_of_award,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",price_evaluation_adjustment_preference_percent_difference,,,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",primary_place_of_performance_city_name,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_primary_place_of_performance_city_name,,
+"Assistance_PrimeAwardSummaries.csv, Assistance_PrimeTransactions.csv",primary_place_of_performance_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv","primary_place_of_performance_congressional_district, prime_award_summary_place_of_performance_cd_original, prime_award_summary_place_of_performance_cd_current","Contracts_Subawards.csv, Assistance_Subawards.csv","prime_award_primary_place_of_performance_congressional_district, prime_award_summary_place_of_performance_cd_original, prime_award_summary_place_of_performance_cd_current","FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",primary_place_of_performance_congressional_district
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",primary_place_of_performance_country_code,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_primary_place_of_performance_country_code,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",primary_place_of_performance_country_name,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_primary_place_of_performance_country_name,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",primary_place_of_performance_country
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv","prime_award_summary_place_of_performance_county_fips_code, prime_award_transaction_place_of_performance_county_fips_code",,,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",primary_place_of_performance_county_name,,,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",primary_place_of_performance_county
+"Assistance_PrimeAwardSummaries.csv, Assistance_PrimeTransactions.csv",primary_place_of_performance_foreign_location,,,,
+"Assistance_PrimeAwardSummaries.csv, Assistance_PrimeTransactions.csv",primary_place_of_performance_scope,Assistance_Subawards.csv,prime_award_primary_place_of_performance_scope,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv","prime_award_summary_place_of_performance_state_fips_code, prime_award_transaction_place_of_performance_state_fips_code, primary_place_of_performance_state_code","Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_primary_place_of_performance_state_code,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",primary_place_of_performance_state_name,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_primary_place_of_performance_state_name,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",primary_place_of_performance_state
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",primary_place_of_performance_zip_4,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_primary_place_of_performance_address_zip_code,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",primary_place_of_performance_zip_code
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_amount,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_awardee_business_types,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_base_action_date_fiscal_year,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv","prime_award_fain, prime_award_piid",,
+,,Contracts_Subawards.csv,prime_award_project_title,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv","contract_award_unique_key, assistance_award_unique_key","Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_unique_key,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",award_unique_key
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",private_university_or_college,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",product_or_service_code_description,,,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",product_or_service_code_description
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",product_or_service_code,,,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",product_or_service_code
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",program_acronym,,,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",program_activities_funding_this_award,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_program_activities_funding_this_award,,
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv, FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",program_activity_code
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv, FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",program_activity_name
+,,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",purchase_card_as_payment_method,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",purchase_card_as_payment_method_code,,,,
+"Assistance_PrimeAwardSummaries.csv, Assistance_PrimeTransactions.csv",record_type_code,,,,
+"Assistance_PrimeAwardSummaries.csv, Assistance_PrimeTransactions.csv",record_type_description,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",recovered_materials_sustainability,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",recovered_materials_sustainability_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",parent_award_agency_name,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",parent_award_single_or_multiple_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",parent_award_single_or_multiple,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",parent_award_type_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",parent_award_type,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",parent_award_agency_id,,,,
+Contracts_PrimeTransactions.csv,parent_award_modification_number,,,,
+,,,,"FA_AccountBalances.csv, TAS_AccountBalances.csv, FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv, FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv","agency_name, reporting_agency_name"
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",research_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",research,,,,
+"Assistance_PrimeAwardSummaries.csv, Assistance_PrimeTransactions.csv",sai_number,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",sam_exception_description,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",sam_exception,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",sba_certified_8a_joint_venture,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",school_of_forestry,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",school_district_local_government,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",sea_transportation,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",sea_transportation_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",self_certified_small_disadvantaged_business,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",service_disabled_veteran_owned_business,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",simplified_procedures_for_certain_commercial_items_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",small_agricultural_cooperative,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",small_business_competitiveness_demonstration_program,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",small_disadvantaged_business,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",sole_proprietorship,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",solicitation_procedures,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",solicitation_date,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",solicitation_identifier,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",solicitation_procedures_code,,,,
+,,,,"FA_AccountBalances.csv, TAS_AccountBalances.csv",spending_authority_from_offsetting_collections_amount
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",state_controlled_institution_of_higher_learning,,,,
+,,,,"FA_AccountBalances.csv, TAS_AccountBalances.csv",status_of_budgetary_resources_total
+,,,,"TAS_AccountBalances.csv, TAS_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByAward.csv",sub_account_code
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subaward_action_date,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subaward_amount,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subaward_description,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subawardee_business_types,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subawardee_dba_name,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subawardee_highly_compensated_officer_1_amount,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subawardee_highly_compensated_officer_1_name,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subawardee_highly_compensated_officer_2_amount,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subawardee_highly_compensated_officer_2_name,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subawardee_highly_compensated_officer_3_amount,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subawardee_highly_compensated_officer_3_name,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subawardee_highly_compensated_officer_4_amount,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subawardee_highly_compensated_officer_4_name,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subawardee_highly_compensated_officer_5_amount,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subawardee_highly_compensated_officer_5_name,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subawardee_address_line_1,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subawardee_city_name,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv","subawardee_congressional_district, subaward_recipient_cd_original, subaward_recipient_cd_current",,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subawardee_country_code,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subawardee_country_name,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subawardee_foreign_postal_code,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subawardee_state_code,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subawardee_state_name,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subawardee_zip_code,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subawardee_name,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subawardee_uei,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subawardee_parent_uei,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subaward_action_date_fiscal_year,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subaward_number,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subaward_primary_place_of_performance_address_line_1,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subaward_primary_place_of_performance_city_name,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv","subaward_primary_place_of_performance_congressional_district, subaward_place_of_performance_cd_original, subaward_place_of_performance_cd_current",,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subaward_primary_place_of_performance_country_code,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subaward_primary_place_of_performance_country_name,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subaward_primary_place_of_performance_state_code,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subaward_primary_place_of_performance_state_name,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subaward_primary_place_of_performance_address_zip_code,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subaward_fsrs_report_id,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subaward_fsrs_report_last_modified_date,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subaward_fsrs_report_month,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subaward_fsrs_report_year,,
+,,"Contracts_Subawards.csv, Assistance_Subawards.csv",subaward_type,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",subchapter_scorporation,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",subcontinent_asian_asian_indian_american_owned_business,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",subcontracting_plan,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",subcontracting_plan_code,,,,
+,,,,"FA_AccountBalances.csv, TAS_AccountBalances.csv, FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv, FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",submission_period
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",the_ability_one_program,,,,
+,,,,"FA_AccountBalances.csv, TAS_AccountBalances.csv",total_budgetary_resources
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv","total_dollars_obligated, total_obligated_amount",,,,
+Assistance_PrimeAwardSummaries.csv,total_funding_amount,,,,
+"Assistance_PrimeAwardSummaries.csv, Assistance_PrimeTransactions.csv",total_face_value_of_loan,,,,
+"Assistance_PrimeAwardSummaries.csv, Assistance_PrimeTransactions.csv",total_non_federal_funding_amount,,,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv","total_outlayed_amount_for_overall_award, total_outlayed_amount","Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_total_outlayed_amount,,
+"Assistance_PrimeAwardSummaries.csv, Assistance_PrimeTransactions.csv",total_loan_subsidy_cost,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",township_local_government,,,,
+Contracts_PrimeTransactions.csv,transaction_number,,,,
+,,,,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",transaction_obligated_amount
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",transit_authority,,,,
+,,,,"TAS_AccountBalances.csv, TAS_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByAward.csv",treasury_account_name
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",treasury_accounts_funding_this_award,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_award_treasury_accounts_funding_this_award,,
+,,,,"TAS_AccountBalances.csv, TAS_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByAward.csv",treasury_account_symbol
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",tribal_college,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",tribally_owned_firm,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",type_of_idc,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",type_of_set_aside,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",type_of_idc_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",type_of_contract_pricing_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",type_of_contract_pricing,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",type_of_set_aside_code,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",us_federal_government,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",us_government_entity,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",us_local_government,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",us_state_government,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",us_tribal_government,,,,
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv","recipient_parent_name, recipient_parent_name_raw","Contracts_Subawards.csv, Assistance_Subawards.csv",prime_awardee_parent_name,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv","recipient_parent_name, recipient_parent_name_raw"
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",recipient_parent_uei,"Contracts_Subawards.csv, Assistance_Subawards.csv",prime_awardee_parent_uei,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",recipient_parent_uei
+Contracts_PrimeTransactions.csv,undefinitized_action,,,,
+Contracts_PrimeTransactions.csv,undefinitized_action_code,,,,
+,,,,"FA_AccountBalances.csv, TAS_AccountBalances.csv",unobligated_balance
+"Assistance_PrimeAwardSummaries.csv, Assistance_PrimeTransactions.csv",award_id_uri,,,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",award_id_uri
+"Contracts_PrimeAwardSummaries.csv, Assistance_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv, Assistance_PrimeTransactions.csv",usaspending_permalink,"Contracts_Subawards.csv, Assistance_Subawards.csv",usaspending_permalink,"FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",usaspending_permalink
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv",USSGL480100_undelivered_orders_obligations_unpaid
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv",USSGL480100_undelivered_orders_obligations_unpaid_FYB
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv",USSGL480200_undelivered_orders_obligations_prepaid_advanced
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv",USSGL480200_undelivered_orders_obligations_prepaid_advanced_FYB
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv",USSGL483100_undelivered_orders_obligations_transferred_unpaid
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv",USSGL483200_undeliv_orders_oblig_transferred_prepaid_advanced
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv",USSGL487100_downward_adj_prior_year_unpaid_undeliv_orders_oblig
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv, FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",USSGL487200_downward_adj_prior_year_prepaid_undeliv_order_oblig
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv",USSGL488100_upward_adj_prior_year_undeliv_orders_oblig_unpaid
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv",USSGL488200_upward_adj_prior_year_undeliv_orders_oblig_prepaid
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv",USSGL490100_delivered_orders_obligations_unpaid
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv",USSGL490100_delivered_orders_obligations_unpaid_FYB
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv",USSGL490200_delivered_orders_obligations_paid
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv",USSGL490800_authority_outlayed_not_yet_disbursed
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv",USSGL490800_authority_outlayed_not_yet_disbursed_FYB
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv",USSGL493100_delivered_orders_obligations_transferred_unpaid
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv",USSGL497100_downward_adj_prior_year_unpaid_deliv_orders_oblig
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv, FA_AccountBreakdownByAward.csv, TAS_AccountBreakdownByAward.csv",USSGL497200_downward_adj_of_prior_year_paid_deliv_orders_oblig
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv",USSGL498100_upward_adj_of_prior_year_deliv_orders_oblig_unpaid
+,,,,"FA_AccountBreakdownByPA-OC.csv, TAS_AccountBreakdownByPA-OC.csv",USSGL498200_upward_adj_of_prior_year_deliv_orders_oblig_paid
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",veteran_owned_business,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",veterinary_college,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",veterinary_hospital,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",woman_owned_business,,,,
+"Contracts_PrimeAwardSummaries.csv, Contracts_PrimeTransactions.csv",women_owned_small_business,,,,
