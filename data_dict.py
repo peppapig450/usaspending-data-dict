@@ -10,6 +10,10 @@ import json
 import shlex
 import asyncio
 from enum import StrEnum, auto
+import logging
+
+# Module-level logger
+logger = logging.getLogger(__name__)
 
 
 class Section(StrEnum):
@@ -109,70 +113,106 @@ def parse_query(query_string: str) -> QueryComponents:
 
     Returns:
         QueryComponents with action, source, target, output_format, and output_file
+
+    Raises:
+        ValueError: If the query syntax is invalid
     """
-    if "->" not in query_string:
+    # Tokenize the entire query string using shlex.split
+    tokens = shlex.split(query_string)
+    if not tokens:
+        raise ValueError("Empty query")
+
+    # Determine the action (first token may be 'query' or 'map')
+    action = QueryAction.QUERY  # Default action
+    if tokens[0] in QueryAction.__members__.values():
+        action = QueryAction(tokens[0])
+        tokens = tokens[1:]  # Remove action token
+    else:
+        action = QueryAction.QUERY  # Action is optional, defaults to 'query'
+
+    # Expect at least col1_ref, '->', col2_ref
+    if len(tokens) < 3 or "->" not in tokens:
         raise ValueError(
-            "Query must contain exactly one '->' to separate column references."
+            "Invalid query syntax. Expected: [action] col1 -> col2 [as format] [to file]"
         )
 
-    # Split into left and right parts (before and after the arrow)
-    left_right_parts = query_string.split("->", 1)
-    left_part = left_right_parts[0].strip()
-    right_part = left_right_parts[1].strip()
-
-    # Parse the left part using shlex
-    left_tokens = shlex.split(left_part)
-
-    # Determine action based on first token
-    if left_tokens[0] in QueryAction.__members__.values():
-        action = QueryAction(left_tokens[0])
-        # The rest of the tokens form the column reference
-        col1_ref = " ".join(left_tokens[1:])
-    else:
-        action = QueryAction.QUERY  # Default action
-        col1_ref = left_part
-
-    # Parse the right part (which may have 'as format' and 'to file' components)
-
-    output_file = None
-    # Check for "to file" syntax
-    if " to " in right_part:
-        col2_and_format, output_file_part = right_part.split(" to ", 1)
-        # Use shlex to handle quoted filenames
-        output_file_tokens = shlex.split(output_file_part)
-        output_file = output_file_tokens[0] if output_file_tokens else None
-    else:
-        col2_and_format = right_part
-
-    # Check for "as format" syntx
-    if " as " in col2_and_format:
-        col2_ref, format_part = col2_and_format.split(" as ", 1)
-        format_tokens = shlex.split(format_part)
-        output_format = (
-            OutputFormat(format_tokens[0]) if format_tokens else OutputFormat.JSON
-        )  # Default to JSON
-    else:
-        col2_ref = col2_and_format
-        output_format = OutputFormat.JSON
-
-    # Clean up whitespace
-    col1_ref = col1_ref.strip()
-    col2_ref = col2_ref.strip()
-
-    # Validate output format
-    if output_format not in ("json", "csv", "text"):
-        error_msg = f"Invalid output format '{output_format}'. Use: json, csv, or text"
-        raise ValueError(error_msg)
-
-    # Parse column references which should be in the format section.field
+    # Find the index of '->' to separate left and right parts
     try:
-        # If fields contain spaces, they might be quoted and properly handled by shlex
-        col1_section_key, col1_field = col1_ref.split(".", 1)
-        col2_section_key, col2_field = col2_ref.split(".", 1)
+        arrow_index = tokens.index("->")
     except ValueError:
+        raise ValueError("Expected '->' between column references")
+
+    # Extract col1_ref (everything before '->')
+    if arrow_index < 1:
+        raise ValueError("Column reference missing before '->'")
+    col1_ref = " ".join(tokens[:arrow_index])  # Rejoin tokens in case of spaces
+
+    # Extract tokens after '->' for the right side
+    right_tokens = tokens[arrow_index + 1 :]
+    if not right_tokens:
+        raise ValueError("Column reference missing after '->'")
+
+    # Parse the right side: col2_ref, [as format], [to file]
+    output_format = OutputFormat.JSON  # Default
+    output_file = None
+    col2_ref = None
+
+    # Look for 'as' and 'to' in the right side tokens
+    i = 0
+    while i < len(right_tokens):
+        if right_tokens[i] == "as":
+            if i + 1 >= len(right_tokens):
+                raise ValueError("'as' must be followed by format")
+            output_format = OutputFormat(right_tokens[i + 1])
+            if col2_ref is None:  # 'as' appears before col2_ref is fully parsed
+                col2_ref = " ".join(right_tokens[:i])
+            i += 2  # Skip 'as' and format
+        elif right_tokens[i] == "to":
+            if i + 1 >= len(right_tokens):
+                raise ValueError("'to' must be followed by output file")
+            output_file = right_tokens[i + 1]
+            if col2_ref is None:  # 'to' appears before col2_ref is fully parsed
+                col2_ref = " ".join(right_tokens[:i])
+            i += 2  # Skip 'to' and file
+        else:
+            i += 1  # Move to next token
+            # If no 'as' or 'to' yet, keep building col2_ref
+            if i == len(right_tokens) and col2_ref is None:
+                col2_ref = " ".join(right_tokens)
+
+    if not col2_ref:
+        raise ValueError("Second column reference (col2) not found after '->'")
+
+    # For 'map' action, ensure output_file is provided
+    if action == QueryAction.MAP and output_file is None:
         raise ValueError(
-            "Each column reference must be in 'section.field' format (e.g., 'schema.Element')."
+            "The 'map' action requires an output file specified with 'to filename'"
         )
+
+    # Function to parse column references into section and field
+    def parse_column_ref(ref: str) -> tuple[str, str]:
+        # Remove outer quotes if present
+        ref = ref.strip()
+        if ref.startswith("'") and ref.endswith("'"):
+            ref = ref[1:-1]
+        elif ref.startswith('"') and ref.endswith('"'):
+            ref = ref[1:-1]
+        # Split on the first dot
+        try:
+            section_key, field = ref.split(".", 1)
+        except ValueError:
+            raise ValueError(
+                f"Invalid column reference: '{ref}'. Expected 'section.field'"
+            )
+        if not section_key or not field:
+            raise ValueError(
+                f"Invalid column reference: '{ref}'. Both section and field are required"
+            )
+        return section_key, field
+
+    # Parse column references
+    col1_section_key, col1_field = parse_column_ref(col1_ref)
+    col2_section_key, col2_field = parse_column_ref(col2_ref)
 
     # Convert section keys to actual section labels
     try:
@@ -181,12 +221,6 @@ def parse_query(query_string: str) -> QueryComponents:
     except (KeyError, ValueError) as e:
         valid_sections = ", ".join(section.value for section in Section)
         raise ValueError(f"Invalid section(s). Valid sections: {valid_sections}") from e
-
-    # Ensure output file is specified for map action
-    if action == "map" and not output_file:
-        raise ValueError(
-            "The 'map' action requires an output file specified with 'to filename'"
-        )
 
     return QueryComponents(
         action=action,
@@ -211,6 +245,7 @@ def query_data_dictionary(
         QueryResult containing the requested data and format
     """
     if df.empty:
+        logging.warning("No data loaded in DataFrame")
         return QueryResult(message="Error: No data loaded.", success=False)
 
     # Unpack components for clarity
@@ -223,15 +258,23 @@ def query_data_dictionary(
     # Check if columns exist in the MultiIndex
     try:
         # Check if the columns exist in the DataFrame
+        if col1 in df.columns:
+            logging.info("Column: %s found in columns", col1)
         if col1 not in df.columns or col2 not in df.columns:
             # Create a dictionary of available fields for each section
-            available_fields = {}
-            for section in Section:
-                section_label = SECTION_LABELS[section]
-                if section_label in df.index.get_level_values("Section"):
-                    available_fields[section.value] = df.xs(
-                        section_label, level="Section", axis=1
-                    ).columns.tolist()
+            available_fields = {
+                section.value: df.xs(
+                    SECTION_LABELS[section], level="Section", axis=1
+                ).columns.tolist()
+                for section in Section
+                if SECTION_LABELS[section] in df.columns.get_level_values("Section")
+            }
+            logger.error(
+                "Column: %s or %s not found in DataFrame. Available fields: %s",
+                col1,
+                col2,
+                json.dumps(available_fields, indent=2),
+            )
 
             return QueryResult(
                 message=f"Error: Column not found. Available fields: {json.dumps(available_fields, indent=2)}",
@@ -239,6 +282,7 @@ def query_data_dictionary(
                 success=False,
             )
     except Exception as e:
+        logger.exception("Error accessing columns")
         return QueryResult(
             message=f"Error accessing columns: {str(e)}",
             output_format=output_format,
@@ -249,6 +293,7 @@ def query_data_dictionary(
     df_subset = df[[col1, col2]].dropna()
 
     if df_subset.empty:
+        logger.info("No data matches query after dropping NaN values")
         return QueryResult(
             message="No data matches the query after dropping NaN values.",
             output_format=output_format,
@@ -261,6 +306,7 @@ def query_data_dictionary(
 
         # Make sure output_file is passed
         if output_file is None:
+            logger.error("No output file specified for map action")
             raise ValueError("No output_file specified.")
 
         # Write to file
@@ -268,6 +314,7 @@ def query_data_dictionary(
         output_path.parent.mkdir(parents=True, exist_ok=True)
         output_path.write_text(json.dumps(mapping_dict, indent=2))
 
+        logger.info("Mapping saved to %s", output_file)
         return QueryResult(
             message=f"Mapping saved to {output_file}",
             output_format=output_format,
@@ -285,6 +332,7 @@ def query_data_dictionary(
 
         # Format output
         list_of_dicts = result_df.to_dict(orient="records")
+        logger.info("Query executed successfully")
         return QueryResult(
             data=list_of_dicts, output_format=output_format, success=True
         )
@@ -294,6 +342,7 @@ async def scrape_data_dictionary(
     url: str = "https://www.usaspending.gov/data-dictionary",
 ) -> pd.DataFrame:
     """Scrape the data dictionary table from the USAspending website, clicking all 'Read More' buttons in parallel with TaskGroup."""
+    logger.info("Starting scrape of data dictionary from %s", url)
     async with async_playwright() as p:
         browser = await p.firefox.launch(headless=True)
         page = await browser.new_page()
@@ -329,11 +378,13 @@ async def scrape_data_dictionary(
     tables = pd.read_html(StringIO(html_content), header=None)
     df = tables[1].copy()
     df.columns = tables[0].columns
+    logger.info("Data dictionary scraped successfully")
     return df
 
 
 def process_data_dictionary(df: pd.DataFrame) -> dict[Section, pd.DataFrame]:
     """Clean the MultiIndex and split the DataFrame into section-specific DataFrames."""
+    logger.debug("Processing DataFrame with shape: %s", df.shape)
     # Clean the second level of the multi-index columns
     df.columns = df.columns.map(
         lambda label: (label[0], label[1].split("Sort")[0].strip())
@@ -346,6 +397,7 @@ def process_data_dictionary(df: pd.DataFrame) -> dict[Section, pd.DataFrame]:
     # Remove the section header level from column names
     for df_val in dfs.values():
         df_val.columns = df_val.columns.droplevel(0)
+    logger.debug("DataFrame split into %d sections", len(dfs))
     return dfs
 
 
@@ -357,7 +409,8 @@ def save_data_dictionary(
     for key, df_val in dfs.items():
         output_path = output_dir / FILENAMES[key]
         df_val.to_csv(output_path, index=False)
-    print("Data dictionary has been scraped and saved to CSVs.")
+        logger.info("Saved %s to %s", FILENAMES[key], output_path)
+    logger.info("Data dictionary has been scraped and saved to CSVs.")
 
 
 def load_data_dictionary(input_dir: Path = OUTPUT_DIR) -> pd.DataFrame:
@@ -367,30 +420,35 @@ def load_data_dictionary(input_dir: Path = OUTPUT_DIR) -> pd.DataFrame:
     Returns:
         Combined MultiIndex DataFrame
     """
+    logger.info("Loading data dictionary from %s", input_dir)
     # Ensure the output directory exists
-    if not OUTPUT_DIR.exists():
+    if not input_dir.exists():
+        logger.warning("Directory %s does not exist", input_dir)
         return pd.DataFrame()
 
     # Load each section's CSV file
-    dfs = []
-    for section, filename in FILENAMES.items():
-        file_path = OUTPUT_DIR / filename
-        if file_path.exists():
-            df = pd.read_csv(file_path)
+    dfs = {}
+    for key, filename in FILENAMES.items():
+        file_path = input_dir / filename
+        if file_path.is_file():
+            dfs[key] = pd.read_csv(file_path)
 
             # Create a MultiIndex DataFrame
-            if not df.empty:
+            if not dfs[key].empty:
                 # Convert to MultiIndex
-                columns = pd.MultiIndex.from_product(
-                    [[SECTION_LABELS[section]], df.columns], names=["Section", "Field"]
+                dfs[key].columns = pd.MultiIndex.from_product(
+                    [[SECTION_LABELS[key]], dfs[key].columns],
+                    names=["Section", "Field"],
                 )
-                # Create a new DataFrame with MultiIndex columns
-                df_multi = pd.DataFrame(df.values, columns=columns)
-                dfs.append(df_multi)
+                logger.debug("Loaded %s with shape: %s", filename, dfs[key].shape)
+            else:
+                logger.warning("File %s not found in %s", filename, input_dir)
 
-    # Combine all DataFrames
     if dfs:
-        return pd.concat(dfs, axis=1)
+        combined_df = pd.concat(dfs.values(), axis=1)
+        logger.info("Combined data dictionary loaded with shape: %s", combined_df.shape)
+        return combined_df
+    logger.warning("No CSV files found in %s", input_dir)
     return pd.DataFrame()
 
 
@@ -404,6 +462,7 @@ def parse_dsl_command(command: str) -> list[str]:
     Returns:
         List of tokens from the command
     """
+    logger.debug("Parsing DSL command: %s", command)
     return shlex.split(command)
 
 
@@ -419,6 +478,12 @@ Examples:
   python data_dict.py query "schema.Element -> usa_spending.'Award Element' as json"
   python data_dict.py query "map usa_spending.'Award Element' -> schema.'Domain Values' as json to output.json"
         """,
+    )
+    parser.add_argument(
+        "--log-level",
+        default="INFO",
+        choices=["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"],
+        help="Set the logging level (default: INFO)",
     )
 
     subparsers = parser.add_subparsers(
@@ -447,41 +512,55 @@ Examples:
 
     args = parser.parse_args()
 
+    # Configure logging
+    logging.basicConfig(
+        level=getattr(logging, args.log_level.upper()),
+        format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        handlers=[
+            logging.StreamHandler(),
+            logging.FileHandler("data_dict.log"),
+        ],
+    )
+    logger.info(
+        "Starting USAspending Data Dictionary Tool with log level: %s", args.log_level
+    )
+
     match args.command:
         case "create":
-            print("Scraping data dictionary...")
+            logger.info("Scraping data dictionary...")
             df = await scrape_data_dictionary()
             dfs = process_data_dictionary(df)
             save_data_dictionary(dfs)
 
         case "load":
-            print(f"Loading data dictionary from {OUTPUT_DIR}...")
+            logger.info("Loading data dictionary from %s", OUTPUT_DIR)
             combined_df = load_data_dictionary()
             if combined_df.empty:
-                print(f"No data found in {OUTPUT_DIR}")
+                logger.warning("No data found in %s", OUTPUT_DIR)
             else:
-                print(f"Loaded data dictionary with shape: {combined_df.shape}")
-                print("\nFirst 5 rows:")
-                print(combined_df.head())
+                logger.debug(f"Loaded data dictionary with shape: {combined_df.shape}")
 
         case "query":
             try:
+                logger.debug("Parsing query: %s", args.query_string)
                 query_components = parse_query(args.query_string)
-                print(f"Parsed query components: {query_components}")
+                logger.debug("Parsed query components: %s", query_components)
 
                 print("Loading data dictionary...")
                 combined_df = load_data_dictionary()
+                logger.debug(f"Loaded data dictionary with shape: {combined_df.shape}")
 
+                logger.info("Loading data dictionary")
                 if combined_df.empty:
-                    print(f"No data found in {OUTPUT_DIR}")
+                    logger.warning("No data found in %s", OUTPUT_DIR)
                 else:
-                    print("Executing query...")
+                    logger.info("Executing query")
                     result = query_data_dictionary(combined_df, query_components)
                     print("\nResult:")
                     print(result)
 
             except ValueError as e:
-                print(f"Error parsing query: {e}")
+                logger.exception("Error parsing query")
                 print("\nSyntax:")
                 print(
                     "  query <section>.<field> -> <section>.<field> [as (json|csv|text)] [to <output_file>]"
@@ -504,11 +583,13 @@ Examples:
             )
 
             # Load data dictionary once for the interactive session
-            print("Loading data dictionary...")
+            logger.info("Starting interactive DSL shell")
+
+            logger.info("Loading data dictionary for interactive session")
             combined_df = load_data_dictionary()
 
             if combined_df.empty:
-                print(f"No data found in {OUTPUT_DIR}")
+                logger.warning("No data found in %s", OUTPUT_DIR)
                 return
 
             print(f"Loaded data dictionary with shape: {combined_df.shape}")
@@ -519,25 +600,26 @@ Examples:
                     user_input = input("\ndata_dict> ").strip()
 
                     if user_input.lower() in ("exit", "quit", "q"):
-                        print("Exiting interactive shell.")
+                        logger.info("Exiting interactive shell")
                         break
 
                     if not user_input:
                         continue
 
                     # Parse and execute the query
+                    logger.debug("User input: %s", user_input)
                     query_components = parse_query(user_input)
                     result = query_data_dictionary(combined_df, query_components)
                     print("\nResult:")
                     print(result)
 
-                except ValueError as e:
-                    print(f"Error: {e}")
+                except ValueError:
+                    logger.exception("Error in interactive query")
                 except KeyboardInterrupt:
-                    print("\nExiting interactive shell.")
+                    logger.info("Interactive shell interrupted by user")
                     break
-                except Exception as e:
-                    print(f"Unexpected error: {e}")
+                except Exception:
+                    logger.exception("Unexpected error in interactive shell")
 
 
 if __name__ == "__main__":
